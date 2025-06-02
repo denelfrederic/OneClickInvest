@@ -51,6 +51,16 @@
             
           
           <li role="none">
+            <a role="menuitem" href="#sections.funding-comparison" target="_self" class="hover:text-white transition-colors duration-300">
+              Modes de levée
+            </a>
+          </li>
+        
+          
+          
+            
+          
+          <li role="none">
             <a role="menuitem" href="#sections.price-comparator" target="_self" class="hover:text-white transition-colors duration-300">
               Tarif
             </a>
@@ -117,6 +127,16 @@
         <li role="none">
           <a role="menuitem" href="#sections.steps-section" target="_self" class="text-white text-2xl hover:text-gray-300 transition-colors duration-300 w-full text-center">
             Fonctionnement
+          </a>
+        </li>
+      
+        
+        
+          
+        
+        <li role="none">
+          <a role="menuitem" href="#sections.funding-comparison" target="_self" class="text-white text-2xl hover:text-gray-300 transition-colors duration-300 w-full text-center">
+            Modes de levée
           </a>
         </li>
       
@@ -417,10 +437,74 @@ Ce nouveau modèle permet à vos investisseurs de soutenir activement votre croi
       </section>
     
       <section 
-        id="sections.price-comparator"
+        id="sections.funding-comparison"
         class="w-full transform transition-all duration-1000 ease-[cubic-bezier(0.33,1,0.68,1)] opacity-100 blur-0 scale-100
            my-32 
           max-w-screen-2xl mx-auto sticky top-0 z-4 section-scroll">
+        
+        <div class="container mx-auto">
+  <h2 class="font-display text-4xl mb-14 max-w-[35rem]">Comprendre les différents modes de levée</h2>
+  
+  <!-- Description introductive -->
+  
+  <div class="mb-10">
+    <p class="text-neutral-400 text-lg leading-relaxed max-w-4xl">Découvrez les avantages et contraintes de chaque approche pour faire le meilleur choix pour votre entreprise.</p>
+  </div>
+  
+
+  <!-- Cartes des différents modes -->
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+    
+    <!-- Introduction en Bourse -->
+    <article class="bg-neutral-900 p-9 py-6 rounded-2xl flex flex-col justify-between">
+      <header>
+        <h3 class="font-display text-3xl mb-4">Introduction en Bourse</h3>
+      </header>
+      <p class="text-neutral-400 mb-14 text-sm">
+        <strong class="text-yellow-400 block mb-2">3 à 10 jours ouvrés</strong>
+        Fenêtre ultra-courte : toute la com' et le placement sont concentrés ; si la demande n'est pas au rendez-vous, il faut baisser le prix ou reporter.
+      </p>
+    </article>
+
+    <!-- Equity-crowdfunding -->
+    <article class="bg-neutral-900 p-9 py-6 rounded-2xl flex flex-col justify-between">
+      <header>
+        <h3 class="font-display text-3xl mb-4">Equity-crowdfunding</h3>
+      </header>
+      <p class="text-neutral-400 mb-14 text-sm">
+        <strong class="text-yellow-400 block mb-2">30 à 90 jours</strong>
+        Campagne « coup de projecteur » limitée dans le temps ; si l'objectif n'est pas atteint, la collecte est annulée ou prolongée, ce qui émousse l'effet d'annonce.
+      </p>
+    </article>
+
+    <!-- One Click Invest -->
+    <article class="bg-neutral-900 p-9 py-6 rounded-2xl flex flex-col justify-between">
+      <header>
+        <h3 class="font-display text-3xl mb-4">One Click Invest</h3>
+      </header>
+      <p class="text-neutral-400 mb-14 text-sm">
+        <strong class="text-yellow-400 block mb-2">En continu (« always-on »)</strong>
+        Pas de date butoir : investisseurs, clients ou salariés peuvent entrer quand ils le souhaitent ; l'entreprise ajuste la valorisation par paliers et collecte de façon récurrente.
+      </p>
+    </article>
+
+  </div>
+
+  <!-- Résumé simple -->
+  <div class="mt-16 text-center">
+    <p class="text-neutral-400 text-lg max-w-3xl mx-auto">
+      <strong class="text-white">En résumé :</strong> IPO et crowdfunding fonctionnent comme des <strong class="text-white">sprints</strong> ; 
+      One Click Invest permet une <strong class="text-yellow-400">collecte permanente et flexible</strong>.
+    </p>
+  </div>
+</div> 
+      </section>
+    
+      <section 
+        id="sections.price-comparator"
+        class="w-full transform transition-all duration-1000 ease-[cubic-bezier(0.33,1,0.68,1)] opacity-100 blur-0 scale-100
+           my-32 
+          max-w-screen-2xl mx-auto sticky top-0 z-5 section-scroll">
         
         <div class="container mx-auto">
   <h2 class="font-display text-4xl max-w-[35rem] mb-14">Comparez et optimisez vos coûts de levée de fonds</h2>
@@ -456,8 +540,8 @@ Ce nouveau modèle permet à vos investisseurs de soutenir activement votre croi
           </div>
           <div class="flex items-center">
             <span>Frais de performance :</span>
-            <span class="font-semibold performance-rate ml-2" data-value="10">
-              10% (100 K €)
+            <span class="font-semibold performance-rate ml-2" data-value="7">
+              7% (70 K €)
             </span>
           </div>
           <div class="flex items-center">
@@ -466,6 +550,17 @@ Ce nouveau modèle permet à vos investisseurs de soutenir activement votre croi
               0% (0 K €)
             </span>
           </div>
+          
+          <!-- Durée de souscription -->
+          <div class="flex items-center pt-2 border-t border-gray-600">
+            <span class="text-blue-300">Durée de souscription :</span>
+            <span class="font-semibold text-blue-200 ml-2">
+              
+                3 à 10 jours ouvrés
+              
+            </span>
+          </div>
+          
           <!-- Nouvelle ligne pour le montant net levé -->
           <div class="flex items-center pt-4 border-t border-gray-600">
             <span class="font-bold text-yellow-400 text-lg">Montant net levé :</span>
@@ -515,10 +610,21 @@ Ce nouveau modèle permet à vos investisseurs de soutenir activement votre croi
           </div>
           <div class="flex items-center">
             <span>Maintenance :</span>
-            <span class="font-semibold maintenance-rate ml-2" data-value="1">
-              1% (10 K €)
+            <span class="font-semibold maintenance-rate ml-2" data-value="0.2">
+              0.2% (2 K €)
             </span>
           </div>
+          
+          <!-- Durée de souscription -->
+          <div class="flex items-center pt-2 border-t border-gray-600">
+            <span class="text-blue-300">Durée de souscription :</span>
+            <span class="font-semibold text-blue-200 ml-2">
+              
+                En continu (« always-on »)
+              
+            </span>
+          </div>
+          
           <!-- Nouvelle ligne pour le montant net levé -->
           <div class="flex items-center pt-4 border-t border-gray-600">
             <span class="font-bold text-yellow-400 text-lg">Montant net levé :</span>
@@ -573,14 +679,14 @@ Ce nouveau modèle permet à vos investisseurs de soutenir activement votre croi
         <div class="space-y-4 text-sm my-8 border-t border-b border-gray-700 py-6">
           <div class="flex items-center">
             <span>Frais de mise en place :</span>
-            <span class="font-semibold setup-cost ml-2" data-value="1.5">
-              1.5 K €
+            <span class="font-semibold setup-cost ml-2" data-value="15">
+              15 K €
             </span>
           </div>
           <div class="flex items-center">
             <span>Frais de performance :</span>
-            <span class="font-semibold performance-rate ml-2" data-value="10">
-              10% (100 K €)
+            <span class="font-semibold performance-rate ml-2" data-value="9">
+              9% (90 K €)
             </span>
           </div>
           <div class="flex items-center">
@@ -589,6 +695,17 @@ Ce nouveau modèle permet à vos investisseurs de soutenir activement votre croi
               0% (0 K €)
             </span>
           </div>
+          
+          <!-- Durée de souscription -->
+          <div class="flex items-center pt-2 border-t border-gray-600">
+            <span class="text-blue-300">Durée de souscription :</span>
+            <span class="font-semibold text-blue-200 ml-2">
+              
+                30 à 90 jours
+              
+            </span>
+          </div>
+          
           <!-- Nouvelle ligne pour le montant net levé -->
           <div class="flex items-center pt-4 border-t border-gray-600">
             <span class="font-bold text-yellow-400 text-lg">Montant net levé :</span>
@@ -612,7 +729,7 @@ Ce nouveau modèle permet à vos investisseurs de soutenir activement votre croi
         id="sections.statistics-section"
         class="w-full transform transition-all duration-1000 ease-[cubic-bezier(0.33,1,0.68,1)] opacity-100 blur-0 scale-100
            my-32 
-          max-w-screen-2xl mx-auto sticky top-0 z-5 section-scroll">
+          max-w-screen-2xl mx-auto sticky top-0 z-6 section-scroll">
         
         <div class="container mx-auto text-center">
     
@@ -650,7 +767,7 @@ Ce nouveau modèle permet à vos investisseurs de soutenir activement votre croi
         class="w-full transform transition-all duration-1000 ease-[cubic-bezier(0.33,1,0.68,1)] opacity-100 blur-0 scale-100
            my-16 bg-custom-blue p-10 rounded-3xl
           
-          max-w-screen-2xl mx-auto sticky top-0 z-6 section-scroll">
+          max-w-screen-2xl mx-auto sticky top-0 z-7 section-scroll">
         
         <div class="container mx-auto">
   <h2 class="font-display text-4xl max-w-[35rem] mb-14">Démocratiser l&#39;investissement en entreprise</h2>
@@ -718,7 +835,7 @@ Bienvenue chez One Click Invest.</p>
         id="sections.faq-section"
         class="w-full transform transition-all duration-1000 ease-[cubic-bezier(0.33,1,0.68,1)] opacity-100 blur-0 scale-100
            my-32 
-          max-w-screen-2xl mx-auto sticky top-0 z-7 section-scroll">
+          max-w-screen-2xl mx-auto sticky top-0 z-8 section-scroll">
         
         <div class="container mx-auto">
   <div class="bg-neutral-900 border-l-4 border-custom-blue rounded-2xl p-9">

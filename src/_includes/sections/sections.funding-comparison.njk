@@ -1,0 +1,56 @@
+<div class="container mx-auto">
+  <h2 class="font-display text-4xl mb-14 max-w-[35rem]">{{ section.title | default("Comparaison des modes de levée") }}</h2>
+  
+  <!-- Description introductive -->
+  {% if section.description %}
+  <div class="mb-10">
+    <p class="text-neutral-400 text-lg leading-relaxed max-w-4xl">{{ section.description }}</p>
+  </div>
+  {% endif %}
+
+  <!-- Cartes des différents modes -->
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+    
+    <!-- Introduction en Bourse -->
+    <article class="bg-neutral-900 p-9 py-6 rounded-2xl flex flex-col justify-between">
+      <header>
+        <h3 class="font-display text-3xl mb-4">Introduction en Bourse</h3>
+      </header>
+      <p class="text-neutral-400 mb-14 text-sm">
+        <strong class="text-yellow-400 block mb-2">3 à 10 jours ouvrés</strong>
+        Fenêtre ultra-courte : toute la com' et le placement sont concentrés ; si la demande n'est pas au rendez-vous, il faut baisser le prix ou reporter.
+      </p>
+    </article>
+
+    <!-- Equity-crowdfunding -->
+    <article class="bg-neutral-900 p-9 py-6 rounded-2xl flex flex-col justify-between">
+      <header>
+        <h3 class="font-display text-3xl mb-4">Equity-crowdfunding</h3>
+      </header>
+      <p class="text-neutral-400 mb-14 text-sm">
+        <strong class="text-yellow-400 block mb-2">30 à 90 jours</strong>
+        Campagne « coup de projecteur » limitée dans le temps ; si l'objectif n'est pas atteint, la collecte est annulée ou prolongée, ce qui émousse l'effet d'annonce.
+      </p>
+    </article>
+
+    <!-- One Click Invest -->
+    <article class="bg-neutral-900 p-9 py-6 rounded-2xl flex flex-col justify-between">
+      <header>
+        <h3 class="font-display text-3xl mb-4">One Click Invest</h3>
+      </header>
+      <p class="text-neutral-400 mb-14 text-sm">
+        <strong class="text-yellow-400 block mb-2">En continu (« always-on »)</strong>
+        Pas de date butoir : investisseurs, clients ou salariés peuvent entrer quand ils le souhaitent ; l'entreprise ajuste la valorisation par paliers et collecte de façon récurrente.
+      </p>
+    </article>
+
+  </div>
+
+  <!-- Résumé simple -->
+  <div class="mt-16 text-center">
+    <p class="text-neutral-400 text-lg max-w-3xl mx-auto">
+      <strong class="text-white">En résumé :</strong> IPO et crowdfunding fonctionnent comme des <strong class="text-white">sprints</strong> ; 
+      One Click Invest permet une <strong class="text-yellow-400">collecte permanente et flexible</strong>.
+    </p>
+  </div>
+</div> 

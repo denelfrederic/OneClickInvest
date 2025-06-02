@@ -18,6 +18,12 @@
         "target": "_self"
       },
       {
+        "text": "Modes de levée",
+        "type": "anchor",
+        "anchor": "sections.funding-comparison",
+        "target": "_self"
+      },
+      {
         "text": "Tarif",
         "type": "anchor",
         "anchor": "sections.price-comparator", 
@@ -122,6 +128,11 @@
           ]
         },
         {
+          "__component": "sections.funding-comparison",
+          "title": "Comprendre les différents modes de levée",
+          "description": "Découvrez les avantages et contraintes de chaque approche pour faire le meilleur choix pour votre entreprise."
+        },
+        {
           "__component": "sections.price-comparator",
           "title": "Comparez et optimisez vos coûts de levée de fonds",
           "priceCards": [
@@ -129,7 +140,7 @@
               "title": "Introduction en Bourse",
               "price": 1,
               "setupCost": "300",
-              "performanceFees": "10",
+              "performanceFees": "7",
               "maintenance": "0",
               "isHighlighted": false
             },
@@ -138,14 +149,14 @@
               "price": 1,
               "setupCost": "5",
               "performanceFees": "3",
-              "maintenance": "1",
+              "maintenance": "0.2",
               "isHighlighted": true
             },
             {
               "title": "Crowdfunding",
               "price": 1,
-              "setupCost": "1.5",
-              "performanceFees": "10",
+              "setupCost": "15",
+              "performanceFees": "9",
               "maintenance": "0",
               "isHighlighted": false
             }

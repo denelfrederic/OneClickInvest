@@ -42,6 +42,21 @@
               {{ card.maintenance }}% ({{ (card.maintenance * card.price * 1000 / 100) }} K €)
             </span>
           </div>
+          
+          <!-- Durée de souscription -->
+          <div class="flex items-center pt-2 border-t border-gray-600">
+            <span class="text-blue-300">Durée de souscription :</span>
+            <span class="font-semibold text-blue-200 ml-2">
+              {% if card.title == "Introduction en Bourse" %}
+                3 à 10 jours ouvrés
+              {% elif card.title == "One Click Invest" %}
+                En continu (« always-on »)
+              {% elif card.title == "Crowdfunding" %}
+                30 à 90 jours
+              {% endif %}
+            </span>
+          </div>
+          
           <!-- Nouvelle ligne pour le montant net levé -->
           <div class="flex items-center pt-4 border-t border-gray-600">
             <span class="font-bold text-yellow-400 text-lg">Montant net levé :</span>
