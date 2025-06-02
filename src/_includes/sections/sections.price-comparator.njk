@@ -42,6 +42,13 @@
               {{ card.maintenance }}% ({{ (card.maintenance * card.price * 1000 / 100) }} K €)
             </span>
           </div>
+          <!-- Nouvelle ligne pour le montant net levé -->
+          <div class="flex items-center pt-4 border-t border-gray-600">
+            <span class="font-bold text-yellow-400">Montant net levé :</span>
+            <span class="font-bold text-yellow-400 net-amount ml-2">
+              <!-- Sera calculé par JavaScript -->
+            </span>
+          </div>
         </div>
         <!-- Bouton Réserver une démo -->
         <a href="#sections.founder-section" 

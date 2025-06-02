@@ -128,7 +128,7 @@
             {
               "title": "Introduction en Bourse",
               "price": 1,
-              "setupCost": "300000",
+              "setupCost": "300",
               "performanceFees": "10",
               "maintenance": "0",
               "isHighlighted": false
@@ -136,7 +136,7 @@
             {
               "title": "One Click Invest",
               "price": 1,
-              "setupCost": "5000",
+              "setupCost": "5",
               "performanceFees": "3",
               "maintenance": "1",
               "isHighlighted": true
@@ -144,7 +144,7 @@
             {
               "title": "Crowdfunding",
               "price": 1,
-              "setupCost": "1500",
+              "setupCost": "1.5",
               "performanceFees": "10",
               "maintenance": "0",
               "isHighlighted": false
@@ -185,28 +185,13 @@
             "social": [
               {
                 "title": "Linkedin",
-                "link": "linkedin.com/in/fredericdenel/",
+                "link": "https://www.linkedin.com/in/fredericdenel/",
                 "social": "Linkedin"
               },
               {
-                "title": "Facebook",
-                "link": "https://www.facebook.com/",
-                "social": "Facebook"
-              },
-              {
-                "title": "Youtube",
-                "link": "Youtube",
-                "social": "Youtube"
-              },
-              {
-                "title": "Telegram",
-                "link": "Telegram",
-                "social": "Telegram"
-              },
-              {
-                "title": "Discord",
-                "link": "Discord",
-                "social": "Discord"
+                "title": "Email",
+                "link": "mailto:fd@oci.fund",
+                "social": "Email"
               }
             ]
           },

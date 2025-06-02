@@ -92,6 +92,7 @@ document.addEventListener('DOMContentLoaded', function() {
       const setupCost = card.querySelector('.setup-cost');
       const performanceRate = card.querySelector('.performance-rate');
       const maintenanceRate = card.querySelector('.maintenance-rate');
+      const netAmount = card.querySelector('.net-amount');
       const priceDisplay = card.querySelector('.text-4xl');
       
       if (brutValue) {
@@ -104,24 +105,36 @@ document.addEventListener('DOMContentLoaded', function() {
         priceDisplay.textContent = millions.toFixed(1).replace('.0', '') + ' M €';
       }
       
+      // Récupérer les valeurs des frais
+      let setupCostValue = 0;
+      let performanceFeeAmount = 0;
+      let maintenanceFeeAmount = 0;
+      
       // Mettre à jour les frais de mise en place
       if (setupCost) {
-        const setupValue = parseInt(setupCost.getAttribute('data-value'));
-        setupCost.textContent = formatNumber(setupValue) + ' K €';
+        setupCostValue = parseFloat(setupCost.getAttribute('data-value'));
+        setupCost.textContent = setupCostValue + ' K €';
       }
       
       // Mettre à jour les frais de performance
       if (performanceRate) {
         const rate = parseFloat(performanceRate.getAttribute('data-value'));
-        const amount = Math.round((rate * value) / 100 / 1000);
-        performanceRate.textContent = rate + '% (' + formatNumber(amount) + ' K €)';
+        performanceFeeAmount = Math.round((rate * value) / 100 / 1000);
+        performanceRate.textContent = rate + '% (' + formatNumber(performanceFeeAmount) + ' K €)';
       }
       
       // Mettre à jour les frais de maintenance
       if (maintenanceRate) {
         const rate = parseFloat(maintenanceRate.getAttribute('data-value'));
-        const amount = Math.round((rate * value) / 100 / 1000);
-        maintenanceRate.textContent = rate + '% (' + formatNumber(amount) + ' K €)';
+        maintenanceFeeAmount = Math.round((rate * value) / 100 / 1000);
+        maintenanceRate.textContent = rate + '% (' + formatNumber(maintenanceFeeAmount) + ' K €)';
+      }
+      
+      // Calculer et afficher le montant net levé
+      if (netAmount) {
+        const netAmountValue = value - (setupCostValue * 1000) - (performanceFeeAmount * 1000) - (maintenanceFeeAmount * 1000);
+        const netMillions = netAmountValue / 1000000;
+        netAmount.textContent = netMillions.toFixed(2) + ' M €';
       }
     }
     
@@ -149,14 +162,20 @@ document.addEventListener('DOMContentLoaded', function() {
       slider.addEventListener('input', function() {
         syncSliders(this);
       });
-      
-      // Initialiser les valeurs au chargement seulement pour les cartes du calculateur
-      const priceCard = slider.closest('.rounded-2xl');
-      // Vérifier si c'est bien une carte de prix (qui contient un slider)
-      if (priceCard && priceCard.querySelector('.slider-sync')) {
-        updateCardValues(priceCard, parseInt(slider.value));
-      }
     });
+    
+    // Initialiser toutes les cartes du calculateur au chargement
+    const priceSection = document.getElementById('sections.price-comparator');
+    if (priceSection) {
+      const priceCards = priceSection.querySelectorAll('.rounded-2xl');
+      priceCards.forEach(card => {
+        const slider = card.querySelector('.slider-sync');
+        if (slider) {
+          // Initialiser avec la valeur par défaut du slider
+          updateCardValues(card, parseInt(slider.value));
+        }
+      });
+    }
   }
 
   // Gestion de l'animation des statistiques
