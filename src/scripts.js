@@ -148,7 +148,7 @@ document.addEventListener('DOMContentLoaded', function() {
       });
       
       // Mettre à jour seulement les cartes du calculateur de prix
-      const priceSection = document.getElementById('sections.price-comparator');
+      const priceSection = document.querySelector('#sections\\.price-comparator');
       if (priceSection) {
         const priceCards = priceSection.querySelectorAll('.rounded-2xl');
         priceCards.forEach(card => {
@@ -165,7 +165,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
     
     // Initialiser toutes les cartes du calculateur au chargement
-    const priceSection = document.getElementById('sections.price-comparator');
+    const priceSection = document.querySelector('#sections\\.price-comparator');
     if (priceSection) {
       const priceCards = priceSection.querySelectorAll('.rounded-2xl');
       priceCards.forEach(card => {
