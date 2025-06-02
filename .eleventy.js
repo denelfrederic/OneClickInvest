@@ -37,6 +37,7 @@ module.exports = function (eleventyConfig) {
   // Copie des fichiers nécessaires
   eleventyConfig.addPassthroughCopy("src/assets/styles.css");
   eleventyConfig.addPassthroughCopy("public/uploads/**/*");
+  eleventyConfig.addPassthroughCopy("src/scripts.js");
 
   // Ajout du filtre sortBy pour trier les tableaux par clé
   eleventyConfig.addNunjucksFilter("sortBy", (array, key) => {

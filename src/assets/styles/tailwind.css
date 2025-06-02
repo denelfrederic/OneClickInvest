@@ -31,3 +31,34 @@
     background-color : #252525; 
   
   }
+
+  /* Styles pour la FAQ */
+  .faq-answer ul {
+    @apply list-disc list-inside space-y-2 ml-4;
+  }
+
+  .faq-answer ol {
+    @apply list-decimal list-inside space-y-2 ml-4;
+  }
+
+  .faq-answer li {
+    @apply text-neutral-400;
+  }
+
+  .faq-answer strong {
+    @apply font-semibold text-white;
+  }
+
+  .faq-answer em {
+    @apply italic;
+  }
+
+  /* Amélioration de l'espacement des paragraphes dans la FAQ */
+  .faq-answer > div > *:not(:last-child) {
+    @apply mb-4;
+  }
+
+  /* Style pour les titres dans les réponses FAQ */
+  .faq-answer h4 {
+    @apply font-semibold text-white mb-2;
+  }

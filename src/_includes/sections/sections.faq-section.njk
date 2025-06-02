@@ -8,15 +8,18 @@
     {% if section.questions %}
       <div class="divide-y divide-gray-700">
         {% for q in section.questions %}
-          <div class="py-4 text-sm">
+          <div class="py-6">
             <!-- Question clickable qui bascule la visibilité de la réponse -->
-            <h3 class="faq-question text-lg font-semibold text-white cursor-pointer" onclick="toggleAnswer(this)">
-              {{ q.question }}
+            <h3 class="faq-question text-lg font-semibold text-white cursor-pointer hover:text-yellow-400 transition-colors duration-200 flex items-center justify-between" onclick="toggleAnswer(this)">
+              <span>{{ q.question }}</span>
+              <svg class="w-5 h-5 transform transition-transform duration-300 faq-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+              </svg>
             </h3>
             <!-- Réponse qui se déplie avec animation -->
-            <p class="text-neutral-400 mt-2 max-h-0 overflow-hidden transition-all duration-500 ease-in-out hidden faq-answer">
-              {{ q.reply }}
-            </p>
+            <div class="text-neutral-400 mt-4 max-h-0 overflow-hidden transition-all duration-500 ease-in-out faq-answer">
+              <div class="whitespace-pre-line text-sm leading-relaxed">{{ q.reply }}</div>
+            </div>
           </div>
         {% endfor %}
       </div>
