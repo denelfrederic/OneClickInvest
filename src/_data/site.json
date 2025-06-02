@@ -1,0 +1,299 @@
+{
+  "title": "OneClick Invest",
+  "description": "Solution de Capital As A Services - Transformez vos clients en investisseurs fidèles",
+  "url": "https://oneclickinvest.com",
+  "header": {
+    "logo": "/public/uploads/logo.svg",
+    "navigation": [
+      {
+        "text": "Services",
+        "type": "anchor",
+        "anchor": "sections.card-section",
+        "target": "_self"
+      },
+      {
+        "text": "Fonctionnement",
+        "type": "anchor", 
+        "anchor": "sections.steps-section",
+        "target": "_self"
+      },
+      {
+        "text": "Tarif",
+        "type": "anchor",
+        "anchor": "sections.price-comparator", 
+        "target": "_self"
+      },
+      {
+        "text": "Contact",
+        "type": "anchor",
+        "anchor": "sections.founder-section",
+        "target": "_self"
+      },
+      {
+        "text": "FAQ",
+        "type": "anchor",
+        "anchor": "sections.faq-section",
+        "target": "_self"
+      }
+    ]
+  },
+  "pages": {
+    "home": {
+      "title": "Accueil",
+      "slug": "home",
+      "sections": [
+        {
+          "__component": "sections.hero-section",
+          "title": "Solution de Capital As A Services",
+          "subtitle": "Transformez vos clients en investisseurs fidèles",
+          "backgroundImage": {
+            "url": "/uploads/background_c76d3e5a60.webp",
+            "alt": "Image de fond décorative"
+          },
+          "button": {
+            "title": "Je démarre en 5 minutes",
+            "link": "#sections.founder-section"
+          }
+        },
+        {
+          "__component": "sections.card-section",
+          "title": "Votre campagne de financement avec OneClick Invest",
+          "cards": [
+            {
+              "title": "Votre levée de fonds en un clic",
+              "description": "Accélérez votre levée de fonds avec OneClick Invest. Grâce à notre solution innovante, collectez des fonds rapidement et efficacement en un clic.",
+              "button": {
+                "title": "En savoir plus",
+                "link": "#"
+              },
+              "popup": {
+                "content": "Sed quid est quod in hac causa maxime homines admirentur et reprehendant meum consilium, cum ego idem antea multa decreverim, que magis ad hominis dignitatem quam ad rei publicae necessitatem pertinerent? Supplicationem quindecim dierum decrevi sententia mea. Rei publicae satis erat tot dierum quot C. Mario ; dis immortalibus non erat exigua eadem gratulatio quae ex maximis bellis. Ergo ille cumulus dierum hominis est dignitati tributus."
+              }
+            },
+            {
+              "title": "Vos clients en investisseurs fidèles",
+              "description": "Transformez vos clients en investisseurs engagés grâce à notre solution, sans les délais et les coûts élevés des méthodes traditionnelles de financement.",
+              "button": {
+                "title": "En savoir plus",
+                "link": "#"
+              },
+              "popup": {
+                "content": "Qui cum venisset ob haec festinatis itineribus Antiochiam, praestrictis palatii ianuis, contempto Caesare, quem videri decuerat, ad praetorium cum pompa sollemni perrexit morbosque diu causatus nec regiam introiit nec processit in publicum, sed abditus multa in eius moliebatur exitium addens quaedam relationibus supervacua, quas subinde dimittebat ad principem."
+              }
+            },
+            {
+              "title": "Marché secondaire clé en main",
+              "description": "Accédez à un marché secondaire clé en main, combinant la liquidité d'une cotation en bourse avec la flexibilité et le contrôle d'une entreprise privée.",
+              "button": {
+                "title": "En savoir plus",
+                "link": "#"
+              },
+              "popup": {
+                "content": "Sed quid est quod in hac causa maxime homines admirentur et reprehendant meum consilium, cum ego idem antea multa decreverim, que magis ad hominis dignitatem quam ad rei publicae necessitatem pertinerent? Supplicationem quindecim dierum decrevi sententia mea. Rei publicae satis erat tot dierum quot C. Mario ; dis immortalibus non erat exigua eadem gratulatio quae ex maximis bellis. Ergo ille cumulus dierum hominis est dignitati tributus."
+              }
+            }
+          ]
+        },
+        {
+          "__component": "sections.steps-section",
+          "title": "Lancez votre levée de fonds en seulement 3 étapes",
+          "steps": [
+            {
+              "icon": {
+                "url": "/uploads/background_c76d3e5a60.webp"
+              },
+              "title": "Inscription et paramétrage rapide",
+              "description": "Inscrivez-vous sur OneClick Invest en quelques minutes. Profitez d'une interface intuitive conçue pour les entreprises, sans jargon technique, pour un paramétrage rapide de votre levée de fonds."
+            },
+            {
+              "icon": {
+                "url": "/uploads/background_c76d3e5a60.webp"
+              },
+              "title": "Définissez vos objectifs de financement",
+              "description": "Déterminez vos objectifs de financement avec l'aide de notre équipe. Que ce soit pour la levée de fonds tokenisée, le montant cible, ou la durée, nous vous guidons pour optimiser l'engagement des investisseurs."
+            },
+            {
+              "icon": {
+                "url": "/uploads/background_c76d3e5a60.webp"
+              },
+              "title": "Intégrez le widget et lancez votre collecte",
+              "description": "Intégrez facilement notre widget de collecte de fonds sur votre site ou partagez le QR code dédié. L'intégration est rapide et fluide, adaptée à vos besoins pour lancer votre collecte de fonds digitale en un clic."
+            }
+          ]
+        },
+        {
+          "__component": "sections.price-comparator",
+          "title": "Comparez et optimisez vos coûts de levée de fonds",
+          "priceCards": [
+            {
+              "title": "Introduction en Bourse",
+              "price": 1,
+              "setupCost": "300000",
+              "performanceFees": "10",
+              "maintenance": "0",
+              "isHighlighted": false
+            },
+            {
+              "title": "One Click Invest",
+              "price": 1,
+              "setupCost": "5000",
+              "performanceFees": "3",
+              "maintenance": "1",
+              "isHighlighted": true
+            },
+            {
+              "title": "Crowdfunding",
+              "price": 1,
+              "setupCost": "1500",
+              "performanceFees": "10",
+              "maintenance": "0",
+              "isHighlighted": false
+            }
+          ]
+        },
+        {
+          "__component": "sections.statistics-section",
+          "stats": [
+            {
+              "value": 83,
+              "suffix": "%",
+              "description": "De fidélité supplémentaire pour un client qui investit dans votre entreprise"
+            },
+            {
+              "value": 50,
+              "suffix": "%",
+              "description": "D'augmentation de valeur pour les entreprises dont le capital est partiellement public"
+            },
+            {
+              "value": 100,
+              "suffix": "%",
+              "description": "Basé sur la tokenisation et la blockchain pour augmenter l'accessibilité et la liquidité"
+            }
+          ]
+        },
+        {
+          "__component": "sections.founder-section",
+          "title": "Démocratiser l'investissement en entreprise",
+          "founders": {
+            "image": [
+              {
+                "url": "/uploads/1730837026112_7aecf78a0a.jpg"
+              }
+            ],
+            "name": "FREDERIC DENEL",
+            "role": "Président et Fondateur",
+            "social": [
+              {
+                "title": "Linkedin",
+                "link": "linkedin.com/in/fredericdenel/",
+                "social": "Linkedin"
+              },
+              {
+                "title": "Facebook",
+                "link": "https://www.facebook.com/",
+                "social": "Facebook"
+              },
+              {
+                "title": "Youtube",
+                "link": "Youtube",
+                "social": "Youtube"
+              },
+              {
+                "title": "Telegram",
+                "link": "Telegram",
+                "social": "Telegram"
+              },
+              {
+                "title": "Discord",
+                "link": "Discord",
+                "social": "Discord"
+              }
+            ]
+          },
+          "cards": {
+            "title": "Démocratiser l'investissement en entreprise",
+            "description": "Chez One Click Invest, nous croyons qu'investir ne devrait pas être réservé à une élite ou à quelques initiés.\nNotre ambition est simple : ouvrir le capital des entreprises à ceux qui les font vivre au quotidien — leurs clients, leurs fans, leurs salariés.\n\nGrâce à notre technologie, chacun peut désormais devenir acteur du succès d'une marque qu'il aime. En quelques clics, via un coffre-fort numérique auto-conservé, vous pouvez soutenir une entreprise, suivre sa croissance, et en partager la valeur.\n\nNous construisons un modèle d'investissement plus humain, plus direct, et plus aligné, où l'attachement à une marque devient un levier de financement concret.\n\nMoins de barrières. Plus d'impact.\nBienvenue dans l'ère de l'investissement communautaire.\nBienvenue chez One Click Invest."
+          }
+        },
+        {
+          "__component": "sections.faq-section",
+          "title": "Questions fréquentes sur le Capital As A Service ?",
+          "questions": [
+            {
+              "question": "Quel type d'entreprises peut utiliser ONE CLICK INVEST pour lever des fonds ?",
+              "reply": "OneClick Invest s'adresse à toutes les entreprises, qu'elles soient petites ou grandes, souhaitant impliquer leur communauté d'utilisateurs dans leur croissance. Que vous cherchiez à remplacer un investisseur unique par un groupe diversifié d'investisseurs ou à mobiliser vos clients, OCI est conçu pour vous. Une forte empreinte numérique est nécessaire pour maximiser l'interaction avec vos clients et faciliter leur participation en tant qu'actionnaires."
+            },
+            {
+              "question": "Comment ONE CLICK INVEST assure-t-il la sécurité et la conformité de la levée de fonds ?",
+              "reply": "ONE CLICK INVEST garantit un cadre juridique solide, sécurisé et conforme à la réglementation.\n\nConformité réglementaire\n- La solution respecte la réglementation en vigueur.\n- Aucun flux financier ne transite par ONE CLICK INVEST FRANCE SAS.\n- Le SPV émetteur reste sous le seuil de 5 millions d'euros sur 12 mois glissants (exemption ART).\n- Le token LLP n'est ni un produit financier, ni un instrument de dette, mais une créance sur un portefeuille d'actifs, sans promesse de rendement garanti.\n\nSécurité technologique\n- Les tokens LLP sont détenus directement par l'investisseur dans un coffre-fort numérique (wallet IBEX), sécurisé par biométrie.\n- Il n'y a aucune dépendance à un dépositaire centralisé : vous gardez le contrôle exclusif de vos actifs.\n- Les tokens sont émis sur des smart contracts audités, qui verrouillent la gouvernance et l'usage des actifs du SPV.\n\nTransparence et documentation\n- Chaque opération est encadrée par un whitepaper (DIS) qui détaille les actifs, la stratégie de gestion, les droits des investisseurs et les conditions de sortie.\n\nRôle de ONE CLICK INVEST\n- ONE CLICK INVEST agit uniquement comme fournisseur de technologie (SaaS), et non comme intermédiaire financier.\n- La levée de fonds est directement initiée par l'entreprise auprès de sa communauté (clients, salariés, partenaires)."
+            },
+            {
+              "question": "Qu'est-ce que ONE CLICK INVEST ?",
+              "reply": "ONE CLICK INVEST est une solution qui permet à une entreprise de proposer à ses clients, fans ou salariés d'investir dans son développement, de manière simple, rapide. Les investisseurs reçoivent des tokens représentant leur participation au projet, déposés dans un coffre-fort numérique auto-conservé, garantissant un contrôle total de leur investissement."
+            },
+            {
+              "question": "Dans quoi j'investis concrètement ?",
+              "reply": "Vous investissez dans un portefeuille commun (appelé LLP – Liquid Lending Pool), géré par une structure dédiée (SPV). Cette structure détient les titres sous-jacents (obligations, actions, actifs réels ou numériques), et émet un token LLP qui représente votre quote-part dans ce portefeuille.\n\nLe token LLP est déposé dans votre coffre-fort numérique auto-conservé (wallet). Il matérialise une créance sur le portefeuille, avec une valorisation qui évolue en fonction des performances des actifs sous-jacents."
+            },
+            {
+              "question": "Est-ce légal et réglementé ?",
+              "reply": "Oui. L'offre respecte la règlementation tant que la collecte ne dépasse pas 5 millions d'euros sur 12 mois glissants. Aucun flux financier ne transite par ONE CLICK INVEST FRANCE, et l'investissement est réalisé directement par l'investisseur, en pleine autonomie via son propre wallet."
+            },
+            {
+              "question": "Comment sont conservés mes tokens ?",
+              "reply": "Vous utilisez un coffre-fort numérique auto-conservé (wallet), sécurisé par votre biométrie. C'est vous qui détenez vos actifs, pas une plateforme centralisée. Cela garantit une transparence totale et une maîtrise complète de vos investissements."
+            },
+            {
+              "question": "Puis-je revendre mes tokens ?",
+              "reply": "Un marché secondaire sera ouvert à partir de 2026. Vous pourrez vendre vos tokens à d'autres investisseurs intéressés, en fonction de la demande et de la valorisation."
+            },
+            {
+              "question": "Y a-t-il des rendements ?",
+              "reply": "Oui, mais sans garantie.\nLe token LLP représente une créance sur un portefeuille d'actifs (actions, obligations, etc.). La performance du token évolue en fonction de la valeur des actifs sous-jacents et des revenus générés par leur gestion (intérêts, plus-values, dividendes éventuels).\n\n✅ Un rendement peut être distribué périodiquement à partir des résultats du portefeuille,\n❌ Mais aucun rendement n'est contractuellement garanti. La performance dépend du marché et de la stratégie d'investissement du SPV."
+            },
+            {
+              "question": "Quels sont les risques ?",
+              "reply": "Comme tout investissement, il existe un risque de perte partielle ou totale du capital investi.\n\nLe token LLP représente une créance sur un portefeuille d'actifs détenus par un SPV. La valeur de ce portefeuille peut varier à la hausse ou à la baisse, en fonction :\n- des marchés financiers (volatilité des actions, obligations, etc.),\n- des décisions de gestion du SPV,\n- et de la liquidité disponible sur le marché secondaire.\n\n❌ Il ne s'agit ni d'une dette contractuelle,\n❌ ni d'une promesse de rendement ou de remboursement à échéance,\n❌ ni d'un produit d'épargne réglementé.\n\n✅ Les investisseurs agissent en pleine autonomie via un coffre-fort numérique auto-conservé (wallet),\n✅ Ils conservent à tout moment la possibilité de transférer ou de revendre leurs tokens (en fonction de la liquidité disponible, notamment à partir de 2026).\n\nCe modèle s'adresse à des investisseurs avertis, conscients des risques, et capables de supporter une perte en capital, en échange d'un potentiel de rendement supérieur à celui des produits traditionnels."
+            },
+            {
+              "question": "Comment cela se passe techniquement ?",
+              "reply": "L'investissement suit un processus simple, sécurisé et conforme :\n\n1. Accès à l'offre : Vous accédez à une offre d'investissement via le site de l'entreprise (ou une page dédiée OCI), où sont présentés :\n   * le descriptif de l'opération,\n   * le montant cible,\n   * les actifs sous-jacents,\n   * les conditions de gestion du portefeuille,\n   * et un document d'information synthétique (DIS/whitepaper).\n2. Ouverture de votre coffre-fort numérique :\n   Vous créez ou utilisez votre wallet, un coffre-fort numérique auto-conservé, sécurisé par votre biométrie. Vous êtes seul à contrôler vos tokens.\n3. Souscription :\n   Vous réalisez un virement en euros ou en crypto vers une adresse liée à votre wallet, et recevez en retour des tokens LLP, émis par le SPV gérant le portefeuille d'investissement.\n4. Détention & suivi :\n   Vos tokens LLP représentent votre quote-part dans la réserve. Vous pouvez suivre leur valeur à tout moment depuis votre wallet.\n5. Liquidité future :\n   À partir de 2026, vous pourrez vendre ou transférer vos tokens LLP sur un marché secondaire, sous réserve de liquidité.\n\n✅ L'ensemble du processus est décentralisé, sans intermédiaire financier, et sans que ONE CLICK INVEST ne dtienne vos fonds."
+            },
+            {
+              "question": "Comment une entreprise peut-elle utiliser ONE CLICK INVEST ?",
+              "reply": "Si vous êtes une entreprise non cotée avec une communauté fidèle, ONE CLICK INVEST vous permet de créer une offre d'investissement communautaire sans passer par les lourdeurs d'une introduction en bourse. La solution est prête à l'emploi."
+            },
+            {
+              "question": "Qui peut investir ?",
+              "reply": "Toute personne majeure peut investir, sans minimum imposé (sauf si précisé dans l'offre). L'accès est généralement ouvert aux clients fidèles, aux salariés, ou à la communauté de la marque."
+            }
+          ]
+        }
+      ]
+    },
+    "cgu": {
+      "title": "Conditions Générales d'Utilisation",
+      "slug": "cgu",
+      "sections": [
+        {
+          "__component": "sections.text-section",
+          "text": "# Conditions Générales d'Utilisation (CGU)\n\n## Article 1 – <u>Objet</u>\n\nLes présentes Conditions Générales d'Utilisation (ci-après les \"CGU\") ont pour objet de définir les modalités d'accès et d'utilisation des services proposés par [Votre Nom ou Nom de votre entreprise] (ci-après \"le Prestataire\") via son API [Nom de votre API] (ci-après \"l'API\").\n\n## Article 2 – _Définitions_\n\n- Utilisateur: Toute personne physique ou morale qui utilise l'API.\n- API: L'interface de programmation permettant l'accès aux services du Prestataire.\n- Services: L'ensemble des fonctionnalités et services accessibles via l'API.\n\n## Article 3 – ~~Acceptation des CGU~~\n\n1. L'utilisation de l'API implique l'acceptation sans réserve des présentes CGU par l'Utilisateur.\n\n## Article 4 – Description des services\n\n- L'API permet à l'Utilisateur d'accéder aux services suivants : [Décrire les fonctionnalités de votre API de manière concise].\n\n## Article 5 – Obligations de l'Utilisateur\n\nL'Utilisateur s'engage à :\n\n1. Utiliser l'API conformément aux présentes CGU et à la législation en vigueur.\n2. Ne pas utiliser l'API à des fins illégales ou contraires à l'ordre public.\n3. Ne pas porter atteinte aux droits de tiers.\n4. Ne pas tenter de contourner les mesures de sécurité mises en place par le Prestataire.\n\n## Article 6 – Responsabilité du Prestataire\n\nLe Prestataire s'engage à fournir l'API avec diligence et dans les meilleures conditions possibles. Cependant, le Prestataire ne saurait être tenu responsable de tout dommage direct ou indirect résultant de l'utilisation de l'API par l'Utilisateur.\n\n## Article 7 – Propriété intellectuelle\n\nL'ensemble des éléments constitutifs de l'API, notamment les logiciels, les bases de données et les contenus, sont la propriété exclusive du Prestataire ou de ses partenaires et sont protégés par les lois de la propriété intellectuelle.\n\n### Article 8 – Modification des CGU\n\nLe Prestataire se réserve le droit de modifier à tout moment les présentes CGU. Les nouvelles CGU seront applicables dès leur mise en ligne.\n\n#### Article 9 – Loi applicable et juridiction\n\nLes présentes CGU sont soumises au droit français. Tout litige relatif à l'interprétation ou à l'exécution des présentes CGU sera soumis à la compétence exclusive des tribunaux de [Ville].\n\n[Test lien](https://github.com/AbsconseOfficiel/OneClickInvest)\n\n> test box\n\n**Important:**"
+        }
+      ]
+    }
+  },
+  "footer": {
+    "links": [
+      {
+        "text": "Mentions légales",
+        "url": "localhost:8080/legal",
+        "target": "_self"
+      },
+      {
+        "text": "Politique de confidentialité",
+        "url": "localhost:8080/cgu",
+        "target": "_self"
+      }
+    ]
+  }
+} 

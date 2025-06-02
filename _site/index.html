@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title></title>
+    <title>OneClick Invest</title>
     <link rel="stylesheet" href="/assets/styles.css" />
     <link href="https://db.onlinewebfonts.com/c/c4d8819fda4c3fd79e36cedcc8d422bb?family=Halyard+Display" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Host+Grotesk:wght@300..800&display=swap" rel="stylesheet" />
@@ -31,7 +31,7 @@
             
           
           <li role="none">
-            <a role="menuitem" href="#sections.card-section" target="" class="hover:text-white transition-colors duration-300">
+            <a role="menuitem" href="#sections.card-section" target="_self" class="hover:text-white transition-colors duration-300">
               Services
             </a>
           </li>
@@ -41,7 +41,7 @@
             
           
           <li role="none">
-            <a role="menuitem" href="#sections.steps-section" target="" class="hover:text-white transition-colors duration-300">
+            <a role="menuitem" href="#sections.steps-section" target="_self" class="hover:text-white transition-colors duration-300">
               Fonctionnement
             </a>
           </li>
@@ -51,7 +51,7 @@
             
           
           <li role="none">
-            <a role="menuitem" href="#sections.price-comparator" target="" class="hover:text-white transition-colors duration-300">
+            <a role="menuitem" href="#sections.price-comparator" target="_self" class="hover:text-white transition-colors duration-300">
               Tarif
             </a>
           </li>
@@ -61,7 +61,7 @@
             
           
           <li role="none">
-            <a role="menuitem" href="#sections.founder-section" target="" class="hover:text-white transition-colors duration-300">
+            <a role="menuitem" href="#sections.founder-section" target="_self" class="hover:text-white transition-colors duration-300">
               Contact
             </a>
           </li>
@@ -71,7 +71,7 @@
             
           
           <li role="none">
-            <a role="menuitem" href="#sections.faq-section" target="" class="hover:text-white transition-colors duration-300">
+            <a role="menuitem" href="#sections.faq-section" target="_self" class="hover:text-white transition-colors duration-300">
               FAQ
             </a>
           </li>
@@ -111,7 +111,7 @@
           
         
         <li role="none">
-          <a role="menuitem" href="#sections.card-section" target="" class="text-white text-2xl hover:text-gray-300 transition-colors duration-300 w-full text-center">
+          <a role="menuitem" href="#sections.card-section" target="_self" class="text-white text-2xl hover:text-gray-300 transition-colors duration-300 w-full text-center">
             Services
           </a>
         </li>
@@ -121,7 +121,7 @@
           
         
         <li role="none">
-          <a role="menuitem" href="#sections.steps-section" target="" class="text-white text-2xl hover:text-gray-300 transition-colors duration-300 w-full text-center">
+          <a role="menuitem" href="#sections.steps-section" target="_self" class="text-white text-2xl hover:text-gray-300 transition-colors duration-300 w-full text-center">
             Fonctionnement
           </a>
         </li>
@@ -131,7 +131,7 @@
           
         
         <li role="none">
-          <a role="menuitem" href="#sections.price-comparator" target="" class="text-white text-2xl hover:text-gray-300 transition-colors duration-300 w-full text-center">
+          <a role="menuitem" href="#sections.price-comparator" target="_self" class="text-white text-2xl hover:text-gray-300 transition-colors duration-300 w-full text-center">
             Tarif
           </a>
         </li>
@@ -141,7 +141,7 @@
           
         
         <li role="none">
-          <a role="menuitem" href="#sections.founder-section" target="" class="text-white text-2xl hover:text-gray-300 transition-colors duration-300 w-full text-center">
+          <a role="menuitem" href="#sections.founder-section" target="_self" class="text-white text-2xl hover:text-gray-300 transition-colors duration-300 w-full text-center">
             Contact
           </a>
         </li>
@@ -151,7 +151,7 @@
           
         
         <li role="none">
-          <a role="menuitem" href="#sections.faq-section" target="" class="text-white text-2xl hover:text-gray-300 transition-colors duration-300 w-full text-center">
+          <a role="menuitem" href="#sections.faq-section" target="_self" class="text-white text-2xl hover:text-gray-300 transition-colors duration-300 w-full text-center">
             FAQ
           </a>
         </li>
@@ -185,19 +185,14 @@
 <main class="w-full px-4 relative overflow-hidden">
   
     
-      
-    
-      
-        
+      <section 
+        id="sections.hero-section"
+        class="w-full transform transition-all duration-1000 ease-[cubic-bezier(0.33,1,0.68,1)] opacity-100 blur-0 scale-100
+           pb-10
           
-            <section 
-              id="sections.hero-section"
-              class="w-full transform transition-all duration-1000 ease-[cubic-bezier(0.33,1,0.68,1)] opacity-100 blur-0 scale-100
-                 pb-10
-                
-                max-w-screen-2xl mx-auto sticky top-0 z-1 section-scroll">
-              
-              <header role="banner">
+          max-w-screen-2xl mx-auto sticky top-0 z-1 section-scroll">
+        
+        <header role="banner">
   <div 
     class="relative h-[85vh] flex bg-cover bg-center rounded-b-2xl overflow-hidden before:content-[''] before:absolute before:inset-0 before:bg-gradient-to-b before:from-black/65 before:to-black/85 before:grayscale after:content-[''] after:absolute after:inset-0 after:bg-black after:mix-blend-color"
     style="background-image: url('/public/uploads/background_c76d3e5a60.webp')"
@@ -249,16 +244,16 @@
     </div>
   </div>
 </header>
-            </section>
+      </section>
+    
+      <section 
+        id="sections.card-section"
+        class="w-full transform transition-all duration-1000 ease-[cubic-bezier(0.33,1,0.68,1)] opacity-100 blur-0 scale-100
+           my-16 bg-custom-blue p-10 rounded-3xl
           
-            <section 
-              id="sections.card-section"
-              class="w-full transform transition-all duration-1000 ease-[cubic-bezier(0.33,1,0.68,1)] opacity-100 blur-0 scale-100
-                 my-16 bg-custom-blue p-10 rounded-3xl
-                
-                max-w-screen-2xl mx-auto sticky top-0 z-2 section-scroll">
-              
-              <div class="container mx-auto">
+          max-w-screen-2xl mx-auto sticky top-0 z-2 section-scroll">
+        
+        <div class="container mx-auto">
   <h2 class="font-display text-4xl mb-14 max-w-[35rem]">
     Votre campagne de financement avec OneClick Invest
   </h2>
@@ -354,15 +349,15 @@
   
 </div>
 
-            </section>
-          
-            <section 
-              id="sections.steps-section"
-              class="w-full transform transition-all duration-1000 ease-[cubic-bezier(0.33,1,0.68,1)] opacity-100 blur-0 scale-100
-                 my-32 
-                max-w-screen-2xl mx-auto sticky top-0 z-3 section-scroll">
-              
-              <div class="container mx-auto">
+      </section>
+    
+      <section 
+        id="sections.steps-section"
+        class="w-full transform transition-all duration-1000 ease-[cubic-bezier(0.33,1,0.68,1)] opacity-100 blur-0 scale-100
+           my-32 
+          max-w-screen-2xl mx-auto sticky top-0 z-3 section-scroll">
+        
+        <div class="container mx-auto">
     <h2 class="font-display text-4xl mb-14 max-w-[35rem]">Lancez votre levée de fonds en seulement 3 étapes</h2>
     <!-- Container pour les étapes -->
     <div class="relative flex justify-center">
@@ -397,7 +392,7 @@
                         <span class="text-sm text-neutral-300">02</span>
                     </div>
                     <h3 class="font-display text-3xl text-white mb-4">Définissez vos objectifs de financement</h3>
-                    <p class="text-neutral-400 text-sm">Déterminez vos objectifs de financement avec l’aide de notre équipe. Que ce soit pour la levée de fonds tokenisée, le montant cible, ou la durée, nous vous guidons pour optimiser l’engagement des investisseurs.</p>
+                    <p class="text-neutral-400 text-sm">Déterminez vos objectifs de financement avec l&#39;aide de notre équipe. Que ce soit pour la levée de fonds tokenisée, le montant cible, ou la durée, nous vous guidons pour optimiser l&#39;engagement des investisseurs.</p>
                 </div>
             </div>
             
@@ -413,22 +408,22 @@
                         <span class="text-sm text-neutral-300">03</span>
                     </div>
                     <h3 class="font-display text-3xl text-white mb-4">Intégrez le widget et lancez votre collecte</h3>
-                    <p class="text-neutral-400 text-sm">Intégrez facilement notre widget de collecte de fonds sur votre site ou partagez le QR code dédié. L’intégration est rapide et fluide, adaptée à vos besoins pour lancer votre collecte de fonds digitale en un clic.</p>
+                    <p class="text-neutral-400 text-sm">Intégrez facilement notre widget de collecte de fonds sur votre site ou partagez le QR code dédié. L&#39;intégration est rapide et fluide, adaptée à vos besoins pour lancer votre collecte de fonds digitale en un clic.</p>
                 </div>
             </div>
             
         </div>
     </div>
 </div>
-            </section>
-          
-            <section 
-              id="sections.price-comparator"
-              class="w-full transform transition-all duration-1000 ease-[cubic-bezier(0.33,1,0.68,1)] opacity-100 blur-0 scale-100
-                 my-32 
-                max-w-screen-2xl mx-auto sticky top-0 z-4 section-scroll">
-              
-              <div class="container mx-auto">
+      </section>
+    
+      <section 
+        id="sections.price-comparator"
+        class="w-full transform transition-all duration-1000 ease-[cubic-bezier(0.33,1,0.68,1)] opacity-100 blur-0 scale-100
+           my-32 
+          max-w-screen-2xl mx-auto sticky top-0 z-4 section-scroll">
+        
+        <div class="container mx-auto">
   <h2 class="font-display text-4xl max-w-[35rem] mb-14">Comparez et optimisez vos coûts de levée de fonds</h2>
   <!-- Cartes -->
   <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -601,15 +596,15 @@
   </div>
 </div>
 
-            </section>
-          
-            <section 
-              id="sections.statistics-section"
-              class="w-full transform transition-all duration-1000 ease-[cubic-bezier(0.33,1,0.68,1)] opacity-100 blur-0 scale-100
-                 my-32 
-                max-w-screen-2xl mx-auto sticky top-0 z-5 section-scroll">
-              
-              <div class="container mx-auto text-center">
+      </section>
+    
+      <section 
+        id="sections.statistics-section"
+        class="w-full transform transition-all duration-1000 ease-[cubic-bezier(0.33,1,0.68,1)] opacity-100 blur-0 scale-100
+           my-32 
+          max-w-screen-2xl mx-auto sticky top-0 z-5 section-scroll">
+        
+        <div class="container mx-auto text-center">
     
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
         
@@ -638,16 +633,16 @@
     
 </div>
 
-            </section>
+      </section>
+    
+      <section 
+        id="sections.founder-section"
+        class="w-full transform transition-all duration-1000 ease-[cubic-bezier(0.33,1,0.68,1)] opacity-100 blur-0 scale-100
+           my-16 bg-custom-blue p-10 rounded-3xl
           
-            <section 
-              id="sections.founder-section"
-              class="w-full transform transition-all duration-1000 ease-[cubic-bezier(0.33,1,0.68,1)] opacity-100 blur-0 scale-100
-                 my-16 bg-custom-blue p-10 rounded-3xl
-                
-                max-w-screen-2xl mx-auto sticky top-0 z-6 section-scroll">
-              
-              <div class="container mx-auto">
+          max-w-screen-2xl mx-auto sticky top-0 z-6 section-scroll">
+        
+        <div class="container mx-auto">
   <h2 class="font-display text-4xl max-w-[35rem] mb-14">Démocratiser l&#39;investissement en entreprise</h2>
   <div class="grid grid-cols-1 lg:grid-cols-12 gap-4">
     <!-- Colonne de gauche (fondateur) - 5/12 sur desktop -->
@@ -715,7 +710,16 @@
       </div>
       <div>
         <h3 class="font-display text-3xl mb-4">Démocratiser l&#39;investissement en entreprise</h3>
-        <p class="text-neutral-400 mb-6 md:mb-7 text-sm">Sed quid est quod in hac causa maxime homines admirentur et reprehendant meum consilium, cum ego idem antea multa decreverim, que magis ad hominis dignitatem quam ad rei publicae necessitatem pertinerent? Supplicationem quindecim dierum decrevi sententia mea. Rei publicae satis erat tot dierum quot C. Mario ; dis immortalibus non erat exigua eadem gratulatio quae ex maximis bellis. Ergo ille cumulus dierum hominis est dignitati tributus.</p>
+        <p class="text-neutral-400 mb-6 md:mb-7 text-sm">Chez One Click Invest, nous croyons qu&#39;investir ne devrait pas être réservé à une élite ou à quelques initiés.
+Notre ambition est simple : ouvrir le capital des entreprises à ceux qui les font vivre au quotidien — leurs clients, leurs fans, leurs salariés.
+
+Grâce à notre technologie, chacun peut désormais devenir acteur du succès d&#39;une marque qu&#39;il aime. En quelques clics, via un coffre-fort numérique auto-conservé, vous pouvez soutenir une entreprise, suivre sa croissance, et en partager la valeur.
+
+Nous construisons un modèle d&#39;investissement plus humain, plus direct, et plus aligné, où l&#39;attachement à une marque devient un levier de financement concret.
+
+Moins de barrières. Plus d&#39;impact.
+Bienvenue dans l&#39;ère de l&#39;investissement communautaire.
+Bienvenue chez One Click Invest.</p>
       </div>
       <div class="flex items-center gap-4 w-full">
         <!-- Formulaire Netlify -->
@@ -748,15 +752,15 @@
   </div>
 </div>
 
-            </section>
-          
-            <section 
-              id="sections.faq-section"
-              class="w-full transform transition-all duration-1000 ease-[cubic-bezier(0.33,1,0.68,1)] opacity-100 blur-0 scale-100
-                 my-32 
-                max-w-screen-2xl mx-auto sticky top-0 z-7 section-scroll">
-              
-              <div class="container mx-auto">
+      </section>
+    
+      <section 
+        id="sections.faq-section"
+        class="w-full transform transition-all duration-1000 ease-[cubic-bezier(0.33,1,0.68,1)] opacity-100 blur-0 scale-100
+           my-32 
+          max-w-screen-2xl mx-auto sticky top-0 z-7 section-scroll">
+        
+        <div class="container mx-auto">
   <div class="bg-neutral-900 border-l-4 border-custom-blue rounded-2xl p-9">
     <div class="mb-7">
       <span class="text-sm text-neutral-300">FAQ</span>
@@ -784,7 +788,172 @@
             </h3>
             <!-- Réponse qui se déplie avec animation -->
             <p class="text-neutral-400 mt-2 max-h-0 overflow-hidden transition-all duration-500 ease-in-out hidden faq-answer">
-              OneClick Invest garantit la sécurité et la conformité de chaque levée de fonds et en respectant les régulations en vigueur. Grâce au modèle des Asset Referenced Tokens (ART) et des jetons de gouvernance DAO, vos clients peuvent investir dans des tokens numériques représentant des titres de votre entreprise. Ces titres sont placés en réserve via une structure juridique appelée SPV (Special Purpose Vehicle), et sont directement accessibles aux investisseurs via un portefeuille électronique sécurisé par des données biométriques. Ce système est conforme aux normes européennes de la régulation MiCA.
+              ONE CLICK INVEST garantit un cadre juridique solide, sécurisé et conforme à la réglementation.
+
+Conformité réglementaire
+- La solution respecte la réglementation en vigueur.
+- Aucun flux financier ne transite par ONE CLICK INVEST FRANCE SAS.
+- Le SPV émetteur reste sous le seuil de 5 millions d&#39;euros sur 12 mois glissants (exemption ART).
+- Le token LLP n&#39;est ni un produit financier, ni un instrument de dette, mais une créance sur un portefeuille d&#39;actifs, sans promesse de rendement garanti.
+
+Sécurité technologique
+- Les tokens LLP sont détenus directement par l&#39;investisseur dans un coffre-fort numérique (wallet IBEX), sécurisé par biométrie.
+- Il n&#39;y a aucune dépendance à un dépositaire centralisé : vous gardez le contrôle exclusif de vos actifs.
+- Les tokens sont émis sur des smart contracts audités, qui verrouillent la gouvernance et l&#39;usage des actifs du SPV.
+
+Transparence et documentation
+- Chaque opération est encadrée par un whitepaper (DIS) qui détaille les actifs, la stratégie de gestion, les droits des investisseurs et les conditions de sortie.
+
+Rôle de ONE CLICK INVEST
+- ONE CLICK INVEST agit uniquement comme fournisseur de technologie (SaaS), et non comme intermédiaire financier.
+- La levée de fonds est directement initiée par l&#39;entreprise auprès de sa communauté (clients, salariés, partenaires).
+            </p>
+          </div>
+        
+          <div class="py-4 text-sm">
+            <!-- Question clickable qui bascule la visibilité de la réponse -->
+            <h3 class="faq-question text-lg font-semibold text-white cursor-pointer" onclick="toggleAnswer(this)">
+              Qu&#39;est-ce que ONE CLICK INVEST ?
+            </h3>
+            <!-- Réponse qui se déplie avec animation -->
+            <p class="text-neutral-400 mt-2 max-h-0 overflow-hidden transition-all duration-500 ease-in-out hidden faq-answer">
+              ONE CLICK INVEST est une solution qui permet à une entreprise de proposer à ses clients, fans ou salariés d&#39;investir dans son développement, de manière simple, rapide. Les investisseurs reçoivent des tokens représentant leur participation au projet, déposés dans un coffre-fort numérique auto-conservé, garantissant un contrôle total de leur investissement.
+            </p>
+          </div>
+        
+          <div class="py-4 text-sm">
+            <!-- Question clickable qui bascule la visibilité de la réponse -->
+            <h3 class="faq-question text-lg font-semibold text-white cursor-pointer" onclick="toggleAnswer(this)">
+              Dans quoi j&#39;investis concrètement ?
+            </h3>
+            <!-- Réponse qui se déplie avec animation -->
+            <p class="text-neutral-400 mt-2 max-h-0 overflow-hidden transition-all duration-500 ease-in-out hidden faq-answer">
+              Vous investissez dans un portefeuille commun (appelé LLP – Liquid Lending Pool), géré par une structure dédiée (SPV). Cette structure détient les titres sous-jacents (obligations, actions, actifs réels ou numériques), et émet un token LLP qui représente votre quote-part dans ce portefeuille.
+
+Le token LLP est déposé dans votre coffre-fort numérique auto-conservé (wallet). Il matérialise une créance sur le portefeuille, avec une valorisation qui évolue en fonction des performances des actifs sous-jacents.
+            </p>
+          </div>
+        
+          <div class="py-4 text-sm">
+            <!-- Question clickable qui bascule la visibilité de la réponse -->
+            <h3 class="faq-question text-lg font-semibold text-white cursor-pointer" onclick="toggleAnswer(this)">
+              Est-ce légal et réglementé ?
+            </h3>
+            <!-- Réponse qui se déplie avec animation -->
+            <p class="text-neutral-400 mt-2 max-h-0 overflow-hidden transition-all duration-500 ease-in-out hidden faq-answer">
+              Oui. L&#39;offre respecte la règlementation tant que la collecte ne dépasse pas 5 millions d&#39;euros sur 12 mois glissants. Aucun flux financier ne transite par ONE CLICK INVEST FRANCE, et l&#39;investissement est réalisé directement par l&#39;investisseur, en pleine autonomie via son propre wallet.
+            </p>
+          </div>
+        
+          <div class="py-4 text-sm">
+            <!-- Question clickable qui bascule la visibilité de la réponse -->
+            <h3 class="faq-question text-lg font-semibold text-white cursor-pointer" onclick="toggleAnswer(this)">
+              Comment sont conservés mes tokens ?
+            </h3>
+            <!-- Réponse qui se déplie avec animation -->
+            <p class="text-neutral-400 mt-2 max-h-0 overflow-hidden transition-all duration-500 ease-in-out hidden faq-answer">
+              Vous utilisez un coffre-fort numérique auto-conservé (wallet), sécurisé par votre biométrie. C&#39;est vous qui détenez vos actifs, pas une plateforme centralisée. Cela garantit une transparence totale et une maîtrise complète de vos investissements.
+            </p>
+          </div>
+        
+          <div class="py-4 text-sm">
+            <!-- Question clickable qui bascule la visibilité de la réponse -->
+            <h3 class="faq-question text-lg font-semibold text-white cursor-pointer" onclick="toggleAnswer(this)">
+              Puis-je revendre mes tokens ?
+            </h3>
+            <!-- Réponse qui se déplie avec animation -->
+            <p class="text-neutral-400 mt-2 max-h-0 overflow-hidden transition-all duration-500 ease-in-out hidden faq-answer">
+              Un marché secondaire sera ouvert à partir de 2026. Vous pourrez vendre vos tokens à d&#39;autres investisseurs intéressés, en fonction de la demande et de la valorisation.
+            </p>
+          </div>
+        
+          <div class="py-4 text-sm">
+            <!-- Question clickable qui bascule la visibilité de la réponse -->
+            <h3 class="faq-question text-lg font-semibold text-white cursor-pointer" onclick="toggleAnswer(this)">
+              Y a-t-il des rendements ?
+            </h3>
+            <!-- Réponse qui se déplie avec animation -->
+            <p class="text-neutral-400 mt-2 max-h-0 overflow-hidden transition-all duration-500 ease-in-out hidden faq-answer">
+              Oui, mais sans garantie.
+Le token LLP représente une créance sur un portefeuille d&#39;actifs (actions, obligations, etc.). La performance du token évolue en fonction de la valeur des actifs sous-jacents et des revenus générés par leur gestion (intérêts, plus-values, dividendes éventuels).
+
+✅ Un rendement peut être distribué périodiquement à partir des résultats du portefeuille,
+❌ Mais aucun rendement n&#39;est contractuellement garanti. La performance dépend du marché et de la stratégie d&#39;investissement du SPV.
+            </p>
+          </div>
+        
+          <div class="py-4 text-sm">
+            <!-- Question clickable qui bascule la visibilité de la réponse -->
+            <h3 class="faq-question text-lg font-semibold text-white cursor-pointer" onclick="toggleAnswer(this)">
+              Quels sont les risques ?
+            </h3>
+            <!-- Réponse qui se déplie avec animation -->
+            <p class="text-neutral-400 mt-2 max-h-0 overflow-hidden transition-all duration-500 ease-in-out hidden faq-answer">
+              Comme tout investissement, il existe un risque de perte partielle ou totale du capital investi.
+
+Le token LLP représente une créance sur un portefeuille d&#39;actifs détenus par un SPV. La valeur de ce portefeuille peut varier à la hausse ou à la baisse, en fonction :
+- des marchés financiers (volatilité des actions, obligations, etc.),
+- des décisions de gestion du SPV,
+- et de la liquidité disponible sur le marché secondaire.
+
+❌ Il ne s&#39;agit ni d&#39;une dette contractuelle,
+❌ ni d&#39;une promesse de rendement ou de remboursement à échéance,
+❌ ni d&#39;un produit d&#39;épargne réglementé.
+
+✅ Les investisseurs agissent en pleine autonomie via un coffre-fort numérique auto-conservé (wallet),
+✅ Ils conservent à tout moment la possibilité de transférer ou de revendre leurs tokens (en fonction de la liquidité disponible, notamment à partir de 2026).
+
+Ce modèle s&#39;adresse à des investisseurs avertis, conscients des risques, et capables de supporter une perte en capital, en échange d&#39;un potentiel de rendement supérieur à celui des produits traditionnels.
+            </p>
+          </div>
+        
+          <div class="py-4 text-sm">
+            <!-- Question clickable qui bascule la visibilité de la réponse -->
+            <h3 class="faq-question text-lg font-semibold text-white cursor-pointer" onclick="toggleAnswer(this)">
+              Comment cela se passe techniquement ?
+            </h3>
+            <!-- Réponse qui se déplie avec animation -->
+            <p class="text-neutral-400 mt-2 max-h-0 overflow-hidden transition-all duration-500 ease-in-out hidden faq-answer">
+              L&#39;investissement suit un processus simple, sécurisé et conforme :
+
+1. Accès à l&#39;offre : Vous accédez à une offre d&#39;investissement via le site de l&#39;entreprise (ou une page dédiée OCI), où sont présentés :
+   * le descriptif de l&#39;opération,
+   * le montant cible,
+   * les actifs sous-jacents,
+   * les conditions de gestion du portefeuille,
+   * et un document d&#39;information synthétique (DIS/whitepaper).
+2. Ouverture de votre coffre-fort numérique :
+   Vous créez ou utilisez votre wallet, un coffre-fort numérique auto-conservé, sécurisé par votre biométrie. Vous êtes seul à contrôler vos tokens.
+3. Souscription :
+   Vous réalisez un virement en euros ou en crypto vers une adresse liée à votre wallet, et recevez en retour des tokens LLP, émis par le SPV gérant le portefeuille d&#39;investissement.
+4. Détention &amp; suivi :
+   Vos tokens LLP représentent votre quote-part dans la réserve. Vous pouvez suivre leur valeur à tout moment depuis votre wallet.
+5. Liquidité future :
+   À partir de 2026, vous pourrez vendre ou transférer vos tokens LLP sur un marché secondaire, sous réserve de liquidité.
+
+✅ L&#39;ensemble du processus est décentralisé, sans intermédiaire financier, et sans que ONE CLICK INVEST ne dtienne vos fonds.
+            </p>
+          </div>
+        
+          <div class="py-4 text-sm">
+            <!-- Question clickable qui bascule la visibilité de la réponse -->
+            <h3 class="faq-question text-lg font-semibold text-white cursor-pointer" onclick="toggleAnswer(this)">
+              Comment une entreprise peut-elle utiliser ONE CLICK INVEST ?
+            </h3>
+            <!-- Réponse qui se déplie avec animation -->
+            <p class="text-neutral-400 mt-2 max-h-0 overflow-hidden transition-all duration-500 ease-in-out hidden faq-answer">
+              Si vous êtes une entreprise non cotée avec une communauté fidèle, ONE CLICK INVEST vous permet de créer une offre d&#39;investissement communautaire sans passer par les lourdeurs d&#39;une introduction en bourse. La solution est prête à l&#39;emploi.
+            </p>
+          </div>
+        
+          <div class="py-4 text-sm">
+            <!-- Question clickable qui bascule la visibilité de la réponse -->
+            <h3 class="faq-question text-lg font-semibold text-white cursor-pointer" onclick="toggleAnswer(this)">
+              Qui peut investir ?
+            </h3>
+            <!-- Réponse qui se déplie avec animation -->
+            <p class="text-neutral-400 mt-2 max-h-0 overflow-hidden transition-all duration-500 ease-in-out hidden faq-answer">
+              Toute personne majeure peut investir, sans minimum imposé (sauf si précisé dans l&#39;offre). L&#39;accès est généralement ouvert aux clients fidèles, aux salariés, ou à la communauté de la marque.
             </p>
           </div>
         
@@ -792,10 +961,7 @@
     
   </div>
 </div>
-            </section>
-          
-        
-      
+      </section>
     
   
 </main>
@@ -816,7 +982,7 @@
   <div class="max-w-screen-2xl mx-auto">
     <div class="container mx-auto flex justify-between py-6 items-center text-center relative z-10 px-10">
       <!-- Texte à gauche -->
-      <p class="text-white text-lg font-semibold drop-shadow-md">Impliquez, Financez, Accélérez !</p>
+      <p class="text-white text-lg font-semibold drop-shadow-md">Impliquez, Financez, Accélérez !</p>
       <!-- Liens à droite -->
       <div class="space-x-4 text-sm">
         

@@ -1,9 +1,5 @@
 ---
-pagination:
-  data: page.published.slug
-  size: 1
-  alias: page
-permalink: "/{{ page.slug | slugify }}/"
+permalink: "/cgu/"
 ---
 
 {% extends "layout.njk" %}
@@ -14,8 +10,8 @@ permalink: "/{{ page.slug | slugify }}/"
 
 {% block content %}
 <main class="w-full px-4 pt-10">
-  {% if page.sections %}
-    {% for section in page.sections %}
+  {% if site.pages.cgu.sections %}
+    {% for section in site.pages.cgu.sections %}
       <!-- Section principale -->
       <section 
         id="{{ section.__component }}"
@@ -33,4 +29,4 @@ permalink: "/{{ page.slug | slugify }}/"
     <p class="text-center text-red-400">Aucune section trouvée.</p>
   {% endif %}
 </main>
-{% endblock %}
+{% endblock %} 
