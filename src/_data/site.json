@@ -51,8 +51,8 @@
             "alt": "Image de fond décorative"
           },
           "button": {
-            "title": "Je démarre en 5 minutes",
-            "link": "#sections.founder-section"
+            "title": "Prendre un RDV",
+            "link": "https://cal.com/fredericdenel/30min"
           }
         },
         {
@@ -60,36 +60,36 @@
           "title": "Votre campagne de financement avec OneClick Invest",
           "cards": [
             {
-              "title": "Votre levée de fonds en un clic",
-              "description": "Accélérez votre levée de fonds avec OneClick Invest. Grâce à notre solution innovante, collectez des fonds rapidement et efficacement en un clic.",
+              "title": "Votre levée de fonds simplifiée",
+              "description": "Accélérez votre financement avec One Click Invest : une solution clé en main pour mobiliser vos clients ou salariés comme investisseurs, sans intermédiaires ni délais inutiles. Collectez des fonds rapidement, de manière sécurisée et conforme.",
               "button": {
                 "title": "En savoir plus",
                 "link": "#"
               },
               "popup": {
-                "content": "Sed quid est quod in hac causa maxime homines admirentur et reprehendant meum consilium, cum ego idem antea multa decreverim, que magis ad hominis dignitatem quam ad rei publicae necessitatem pertinerent? Supplicationem quindecim dierum decrevi sententia mea. Rei publicae satis erat tot dierum quot C. Mario ; dis immortalibus non erat exigua eadem gratulatio quae ex maximis bellis. Ergo ille cumulus dierum hominis est dignitati tributus."
+                "content": "One Click Invest vous permet de mobiliser vos clients, salariés ou partenaires comme investisseurs en un temps record. Grâce à notre solution émettez un jeton numérique représentatif d'une réserve de titres (token LLP) et proposez un parcours d'investissement simple et rapide.\n\nAucune infrastructure financière à mettre en place : votre levée de fonds est propulsée par notre solution, garantissant une détention en self-custody (coffre-fort numérique auto-conservé) pour vos utilisateurs.\n\nOffrez à votre communauté l'opportunité de participer à l'aventure de votre entreprise en toute transparence, avec la possibilité de bénéficier d'avantages exclusifs et d'un accès futur au marché secondaire."
               }
             },
             {
-              "title": "Vos clients en investisseurs fidèles",
+              "title": "Vos clients deviennent des investisseurs",
               "description": "Transformez vos clients en investisseurs engagés grâce à notre solution, sans les délais et les coûts élevés des méthodes traditionnelles de financement.",
               "button": {
                 "title": "En savoir plus",
                 "link": "#"
               },
               "popup": {
-                "content": "Qui cum venisset ob haec festinatis itineribus Antiochiam, praestrictis palatii ianuis, contempto Caesare, quem videri decuerat, ad praetorium cum pompa sollemni perrexit morbosque diu causatus nec regiam introiit nec processit in publicum, sed abditus multa in eius moliebatur exitium addens quaedam relationibus supervacua, quas subinde dimittebat ad principem."
+                "content": "One Click Invest vous offre une nouvelle voie de financement en transformant vos clients les plus fidèles en investisseurs de long terme. En quelques clics, vous créez une structure juridique dédiée (SPV) qui émet un jeton numérique (token LLP) adossé à une réserve de titres de votre entreprise.\n\nSans passer par la bourse, sans intermédiation bancaire, vous mobilisez votre communauté de manière directe et authentique. Vous évitez ainsi les lourdeurs administratives, les délais interminables et les coûts élevés des levées de fonds classiques, tout en renforçant le lien émotionnel et financier avec vos clients.\n\nCe nouveau modèle permet à vos investisseurs de soutenir activement votre croissance, d'en partager les fruits, et de bénéficier d'avantages exclusifs liés à leur engagement — sans exiger de droits de vote ou de participation à la gouvernance."
               }
             },
             {
-              "title": "Marché secondaire clé en main",
-              "description": "Accédez à un marché secondaire clé en main, combinant la liquidité d'une cotation en bourse avec la flexibilité et le contrôle d'une entreprise privée.",
+              "title": "Marché secondaire intégré et flexible",
+              "description": "Offrez à vos investisseurs une solution de liquidité sans complexité : notre marché secondaire intégré permet l'échange des tokens de manière simple, sécurisée et conforme. Vous combinez les avantages d'une entreprise privée avec une flexibilité proche d'une cotation, tout en gardant le contrôle total sur votre capital.",
               "button": {
                 "title": "En savoir plus",
                 "link": "#"
               },
               "popup": {
-                "content": "Sed quid est quod in hac causa maxime homines admirentur et reprehendant meum consilium, cum ego idem antea multa decreverim, que magis ad hominis dignitatem quam ad rei publicae necessitatem pertinerent? Supplicationem quindecim dierum decrevi sententia mea. Rei publicae satis erat tot dierum quot C. Mario ; dis immortalibus non erat exigua eadem gratulatio quae ex maximis bellis. Ergo ille cumulus dierum hominis est dignitati tributus."
+                "content": "Le marché secondaire sera disponible à partir de 2026. Il offrira à vos investisseurs la possibilité de revendre librement leurs tokens à d'autres membres de la communauté, selon les conditions de l'offre et de la demande. Il ne s'agit pas d'une garantie de liquidité permanente, mais d'une option concrète pour ceux qui souhaitent une sortie à moyen terme, dans un cadre sécurisé ."
               }
             }
           ]
@@ -102,15 +102,15 @@
               "icon": {
                 "url": "/uploads/background_c76d3e5a60.webp"
               },
-              "title": "Inscription et paramétrage rapide",
-              "description": "Inscrivez-vous sur OneClick Invest en quelques minutes. Profitez d'une interface intuitive conçue pour les entreprises, sans jargon technique, pour un paramétrage rapide de votre levée de fonds."
+              "title": "Prenez rendez-vous et parlons de votre projet",
+              "description": "Bénéficiez d'un accompagnement personnalisé dès le départ. Un expert One Click Invest vous aide à structurer votre levée de fonds, en tenant compte de vos objectifs, de votre communauté et de votre timing."
             },
             {
               "icon": {
                 "url": "/uploads/background_c76d3e5a60.webp"
               },
               "title": "Définissez vos objectifs de financement",
-              "description": "Déterminez vos objectifs de financement avec l'aide de notre équipe. Que ce soit pour la levée de fonds tokenisée, le montant cible, ou la durée, nous vous guidons pour optimiser l'engagement des investisseurs."
+              "description": "Déterminez le montant cible, la durée de la campagne et les modalités de votre levée de fonds tokenisée. Adaptez chaque paramètre pour maximiser l'engagement de vos investisseurs et répondre aux besoins de votre entreprise."
             },
             {
               "icon": {
@@ -155,17 +155,17 @@
           "__component": "sections.statistics-section",
           "stats": [
             {
-              "value": 83,
+              "value": 40,
               "suffix": "%",
               "description": "De fidélité supplémentaire pour un client qui investit dans votre entreprise"
             },
             {
-              "value": 50,
+              "value": 15,
               "suffix": "%",
               "description": "D'augmentation de valeur pour les entreprises dont le capital est partiellement public"
             },
             {
-              "value": 100,
+              "value": 25,
               "suffix": "%",
               "description": "Basé sur la tokenisation et la blockchain pour augmenter l'accessibilité et la liquidité"
             }

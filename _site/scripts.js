@@ -76,4 +76,122 @@ document.addEventListener('DOMContentLoaded', function() {
   if (currentYearElement) {
     currentYearElement.textContent = new Date().getFullYear();
   }
+
+  // Gestion du calculateur de prix
+  const sliders = document.querySelectorAll('.slider-sync');
+  
+  if (sliders.length > 0) {
+    // Fonction pour formater les nombres avec des espaces
+    function formatNumber(num) {
+      return num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ' ');
+    }
+    
+    // Fonction pour mettre à jour les valeurs d'une carte
+    function updateCardValues(card, value) {
+      const brutValue = card.querySelector('.brut-value');
+      const setupCost = card.querySelector('.setup-cost');
+      const performanceRate = card.querySelector('.performance-rate');
+      const maintenanceRate = card.querySelector('.maintenance-rate');
+      const priceDisplay = card.querySelector('.text-4xl');
+      
+      if (brutValue) {
+        brutValue.textContent = formatNumber(value);
+      }
+      
+      // Mettre à jour l'affichage du prix principal
+      if (priceDisplay) {
+        const millions = value / 1000000;
+        priceDisplay.textContent = millions.toFixed(1).replace('.0', '') + ' M €';
+      }
+      
+      // Mettre à jour les frais de mise en place
+      if (setupCost) {
+        const setupValue = parseInt(setupCost.getAttribute('data-value'));
+        setupCost.textContent = formatNumber(setupValue) + ' K €';
+      }
+      
+      // Mettre à jour les frais de performance
+      if (performanceRate) {
+        const rate = parseFloat(performanceRate.getAttribute('data-value'));
+        const amount = Math.round((rate * value) / 100 / 1000);
+        performanceRate.textContent = rate + '% (' + formatNumber(amount) + ' K €)';
+      }
+      
+      // Mettre à jour les frais de maintenance
+      if (maintenanceRate) {
+        const rate = parseFloat(maintenanceRate.getAttribute('data-value'));
+        const amount = Math.round((rate * value) / 100 / 1000);
+        maintenanceRate.textContent = rate + '% (' + formatNumber(amount) + ' K €)';
+      }
+    }
+    
+    // Synchroniser tous les sliders et mettre à jour les valeurs
+    function syncSliders(changedSlider) {
+      const value = parseInt(changedSlider.value);
+      
+      // Synchroniser tous les sliders
+      sliders.forEach(slider => {
+        slider.value = value;
+      });
+      
+      // Mettre à jour seulement les cartes du calculateur de prix
+      const priceSection = document.getElementById('sections.price-comparator');
+      if (priceSection) {
+        const priceCards = priceSection.querySelectorAll('.rounded-2xl');
+        priceCards.forEach(card => {
+          updateCardValues(card, value);
+        });
+      }
+    }
+    
+    // Ajouter les écouteurs d'événements à tous les sliders
+    sliders.forEach(slider => {
+      slider.addEventListener('input', function() {
+        syncSliders(this);
+      });
+      
+      // Initialiser les valeurs au chargement seulement pour les cartes du calculateur
+      const priceCard = slider.closest('.rounded-2xl');
+      // Vérifier si c'est bien une carte de prix (qui contient un slider)
+      if (priceCard && priceCard.querySelector('.slider-sync')) {
+        updateCardValues(priceCard, parseInt(slider.value));
+      }
+    });
+  }
+
+  // Gestion de l'animation des statistiques
+  const statValues = document.querySelectorAll('.stat-value');
+  
+  if (statValues.length > 0) {
+    // Fonction pour animer un compteur
+    function animateCounter(element) {
+      const target = parseInt(element.getAttribute('data-value'));
+      const suffix = element.textContent.match(/[%€]/)?.[0] || '';
+      let current = 0;
+      const increment = target / 50; // Animation en 50 étapes
+      const timer = setInterval(() => {
+        current += increment;
+        if (current >= target) {
+          current = target;
+          clearInterval(timer);
+        }
+        element.textContent = Math.round(current) + suffix;
+      }, 30);
+    }
+    
+    // Observer pour déclencher l'animation quand l'élément est visible
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting && !entry.target.classList.contains('animated')) {
+          entry.target.classList.add('animated');
+          animateCounter(entry.target);
+        }
+      });
+    }, { threshold: 0.5 });
+    
+    // Observer tous les compteurs
+    statValues.forEach(stat => {
+      observer.observe(stat);
+    });
+  }
 }); 
