@@ -79,14 +79,8 @@
       </ul>
     
 
-    <!-- Boutons (Log In & Contact) - Desktop -->
+    <!-- Boutons (Contact seulement) - Desktop -->
     <div class="hidden md:flex items-center space-x-4">
-      <button class="group relative flex items-center rounded-md bg-custom-blue px-4 py-2 text-white text-sm font-medium hover:bg-opacity-90 transition-colors duration-300">
-        Connexion
-        <svg class="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-        </svg>
-      </button>
       <a href="#sections.founder-section" class="group relative flex items-center rounded-md border border-custom-blue px-4 py-2 text-gray-300 text-sm font-medium hover:bg-custom-blue hover:bg-opacity-90 hover:text-white transition-colors duration-300">
         Contact
       </a>
@@ -159,16 +153,8 @@
     </ul>
   
 
-  <!-- Boutons Log In et Contact pour Mobile -->
+  <!-- Bouton Contact pour Mobile -->
   <div class="flex flex-col items-center space-y-4 w-full mt-6">
-    <!-- Bouton Log In -->
-    <button role="menuitem" class="group relative flex items-center justify-center rounded-lg bg-custom-blue px-6 py-3 text-white text-xl shadow-lg hover:bg-opacity-90 transition-colors duration-300 w-3/4">
-      Connexion
-      <svg class="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-      </svg>
-    </button>
-
     <!-- Bouton Contact -->
     <a href="#sections.founder-section" role="menuitem" class="group relative flex items-center justify-center rounded-lg border border-custom-blue px-6 py-3 text-gray-300 text-xl shadow-lg hover:bg-custom-blue hover:bg-opacity-90 hover:text-white transition-colors duration-300 w-3/4">
       Contact
@@ -482,11 +468,14 @@ Ce nouveau modèle permet à vos investisseurs de soutenir activement votre croi
           </div>
           <!-- Nouvelle ligne pour le montant net levé -->
           <div class="flex items-center pt-4 border-t border-gray-600">
-            <span class="font-bold text-yellow-400">Montant net levé :</span>
-            <span class="font-bold text-yellow-400 net-amount ml-2">
+            <span class="font-bold text-yellow-400 text-lg">Montant net levé :</span>
+            <span class="font-bold text-yellow-400 net-amount ml-2 text-3xl">
               <!-- Sera calculé par JavaScript -->
             </span>
           </div>
+          
+          <!-- Section spéciale pour One Click Invest : montant supplémentaire levé -->
+          
         </div>
       </div>
     </article>
@@ -532,11 +521,31 @@ Ce nouveau modèle permet à vos investisseurs de soutenir activement votre croi
           </div>
           <!-- Nouvelle ligne pour le montant net levé -->
           <div class="flex items-center pt-4 border-t border-gray-600">
-            <span class="font-bold text-yellow-400">Montant net levé :</span>
-            <span class="font-bold text-yellow-400 net-amount ml-2">
+            <span class="font-bold text-yellow-400 text-lg">Montant net levé :</span>
+            <span class="font-bold text-yellow-400 net-amount ml-2 text-3xl">
               <!-- Sera calculé par JavaScript -->
             </span>
           </div>
+          
+          <!-- Section spéciale pour One Click Invest : montant supplémentaire levé -->
+          
+          <div class="additional-amount-section mt-4 p-3 bg-gradient-to-r from-green-900/20 to-emerald-900/20 rounded-lg border border-green-500/30 hidden">
+            <div class="flex items-center justify-between">
+              <div class="flex items-center">
+                <svg class="w-5 h-5 text-green-400 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path>
+                </svg>
+                <span class="text-sm text-green-300">Montant supplémentaire levé :</span>
+              </div>
+              <span class="font-bold text-green-400 additional-amount text-lg">
+                <!-- Sera calculé par JavaScript -->
+              </span>
+            </div>
+            <div class="text-xs text-green-200/70 mt-1 ml-7">
+              vs. moins bonne alternative
+            </div>
+          </div>
+          
         </div>
       </div>
     </article>
@@ -582,11 +591,14 @@ Ce nouveau modèle permet à vos investisseurs de soutenir activement votre croi
           </div>
           <!-- Nouvelle ligne pour le montant net levé -->
           <div class="flex items-center pt-4 border-t border-gray-600">
-            <span class="font-bold text-yellow-400">Montant net levé :</span>
-            <span class="font-bold text-yellow-400 net-amount ml-2">
+            <span class="font-bold text-yellow-400 text-lg">Montant net levé :</span>
+            <span class="font-bold text-yellow-400 net-amount ml-2 text-3xl">
               <!-- Sera calculé par JavaScript -->
             </span>
           </div>
+          
+          <!-- Section spéciale pour One Click Invest : montant supplémentaire levé -->
+          
         </div>
       </div>
     </article>

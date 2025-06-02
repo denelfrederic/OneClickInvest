@@ -154,6 +154,9 @@ document.addEventListener('DOMContentLoaded', function() {
         priceCards.forEach(card => {
           updateCardValues(card, value);
         });
+        
+        // Mettre à jour les montants supplémentaires pour One Click Invest
+        updateAdditionalAmounts(value);
       }
     }
     
@@ -168,13 +171,77 @@ document.addEventListener('DOMContentLoaded', function() {
     const priceSection = document.querySelector('#sections\\.price-comparator');
     if (priceSection) {
       const priceCards = priceSection.querySelectorAll('.rounded-2xl');
+      let initValue = 5000000; // Valeur par défaut
+      
       priceCards.forEach(card => {
         const slider = card.querySelector('.slider-sync');
         if (slider) {
           // Initialiser avec la valeur par défaut du slider
           updateCardValues(card, parseInt(slider.value));
+          initValue = parseInt(slider.value);
         }
       });
+      
+      // Initialiser les montants supplémentaires pour One Click Invest
+      updateAdditionalAmounts(initValue);
+    }
+
+    // Fonction pour calculer le montant net pour une configuration donnée
+    function calculateNetAmount(value, setupCost, performanceRate, maintenanceRate) {
+      const setupCostValue = parseFloat(setupCost) * 1000;
+      const performanceFeeAmount = Math.round((parseFloat(performanceRate) * value) / 100);
+      const maintenanceFeeAmount = Math.round((parseFloat(maintenanceRate) * value) / 100);
+      return value - setupCostValue - performanceFeeAmount - maintenanceFeeAmount;
+    }
+    
+    // Fonction pour mettre à jour les montants supplémentaires de One Click Invest
+    function updateAdditionalAmounts(value) {
+      const priceSection = document.querySelector('#sections\\.price-comparator');
+      if (!priceSection) return;
+      
+      const cards = priceSection.querySelectorAll('.rounded-2xl');
+      let netAmounts = {};
+      
+      // Calculer les montants nets pour chaque option
+      cards.forEach(card => {
+        const title = card.querySelector('.font-display').textContent.trim();
+        const setupCost = card.querySelector('.setup-cost')?.getAttribute('data-value');
+        const performanceRate = card.querySelector('.performance-rate')?.getAttribute('data-value');
+        const maintenanceRate = card.querySelector('.maintenance-rate')?.getAttribute('data-value');
+        
+        if (setupCost && performanceRate && maintenanceRate) {
+          netAmounts[title] = calculateNetAmount(value, setupCost, performanceRate, maintenanceRate);
+        }
+      });
+      
+      // Mettre à jour l'affichage pour One Click Invest
+      const oneClickCard = Array.from(cards).find(card => 
+        card.querySelector('.font-display')?.textContent.trim() === 'One Click Invest'
+      );
+      
+      if (oneClickCard && netAmounts['One Click Invest']) {
+        const additionalSection = oneClickCard.querySelector('.additional-amount-section');
+        const additionalAmount = oneClickCard.querySelector('.additional-amount');
+        
+        if (additionalSection && additionalAmount) {
+          // Trouver la moins bonne alternative (plus bas montant net parmi les autres)
+          const alternatives = Object.entries(netAmounts).filter(([title]) => title !== 'One Click Invest');
+          const worstAlternative = Math.min(...alternatives.map(([, amount]) => amount));
+          
+          const difference = netAmounts['One Click Invest'] - worstAlternative;
+          
+          if (difference > 0) {
+            // Afficher en euros avec formatage
+            additionalAmount.textContent = '+' + formatNumber(Math.round(difference)) + ' €';
+            additionalSection.classList.remove('hidden');
+            
+            // Ajouter un effet de pulsation subtile
+            additionalSection.style.animation = 'pulse 2s ease-in-out infinite';
+          } else {
+            additionalSection.classList.add('hidden');
+          }
+        }
+      }
     }
   }
 
